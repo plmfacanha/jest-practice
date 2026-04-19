@@ -28,26 +28,26 @@ const calculator = {
   },
 };
 
-function caesarCipher(str, shift) {
-  let result = "";
+// function caesarCipher(str, shift) {
+//   let result = "";
 
-  for (let i = 0; i < str.length; i++) {
-    const char = str[i];
-    const code = char.charCodeAt(0);
+//   for (let i = 0; i < str.length; i++) {
+//     const char = str[i];
+//     const code = char.charCodeAt(0);
 
-    if (code >= 65 && code <= 90) {
-      const shifted = ((((code - 65 + shift) % 26) + 26) % 26) + 65;
-      result += String.fromCharCode(shifted);
-    } else if (code >= 97 && code <= 122) {
-      const shifted = ((((code - 97 + shift) % 26) + 26) % 26) + 97;
-      result += String.fromCharCode(shifted);
-    } else {
-      result += char;
-    }
-  }
+//     if (code >= 65 && code <= 90) {
+//       const shifted = ((((code - 65 + shift) % 26) + 26) % 26) + 65;
+//       result += String.fromCharCode(shifted);
+//     } else if (code >= 97 && code <= 122) {
+//       const shifted = ((((code - 97 + shift) % 26) + 26) % 26) + 97;
+//       result += String.fromCharCode(shifted);
+//     } else {
+//       result += char;
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
 function analyzeArray(arr) {
   let sum = 0;
