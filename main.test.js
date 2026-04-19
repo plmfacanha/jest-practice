@@ -36,22 +36,6 @@ test("calculator multiply", () => {
   expect(main.calculator.multiply(6, 7)).toBe(42);
 });
 
-// test("caesarCipher basic shift", () => {
-//   expect(main.caesarCipher("abc", 3)).toBe("def");
-// });
-
-// test("caesarCipher wraps from z to a", () => {
-//   expect(main.caesarCipher("xyz", 3)).toBe("abc");
-// });
-
-// test("caesarCipher preserves case", () => {
-//   expect(main.caesarCipher("HeLLo", 3)).toBe("KhOOr");
-// });
-
-// test("caesarCipher keeps punctuation and spaces", () => {
-//   expect(main.caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
-// });
-
 test("analyzeArray returns correct object", () => {
   expect(main.analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
     average: 4,
